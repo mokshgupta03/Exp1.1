@@ -3,9 +3,9 @@ using namespace std;
 int main()
 {
     int i,a[10],n,ele,lb=0,ub,mid;
-cout<<"Enter the no of elements you want in array"<<endl;
+cout<<"Enter the no of elements you want in "<<endl;
 cin>>n;
-cout<<"Enter elements in the array "<<endl;
+cout<<"Enter elements in array "<<endl;
 for(i=0;i<n;i++)
 {
     cin>>a[i];
@@ -15,7 +15,7 @@ for(i=0;i<n;i++)
 {
     cout<<a[i]<<" ";
 }
-cout<<"Enter the element you want to search in array "<<endl;
+cout<<"Enter the element you want to search array "<<endl;
 cin>>ele;
 ub=n-1;
 while(lb<=ub)
