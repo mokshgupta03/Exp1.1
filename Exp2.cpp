@@ -1,31 +1,31 @@
 #include<iostream>
 using namespace std;
-int main()
+void  main()
 {
-    int i,a[10],n,ele,lb=0,ub,mid;
+    int i,arr[10],n,element,lb=0,ub,mid;
 cout<<"Enter the no of elements you want in array"<<endl;
 cin>>n;
 cout<<"Enter elements in the array "<<endl;
 for(i=0;i<n;i++)
 {
-    cin>>a[i];
+    cin>>arr[i];
 }
 cout<<"The array is "<<endl;
 for(i=0;i<n;i++)
 {
-    cout<<a[i]<<" ";
+    cout<<arr[i]<<" ";
 }
 cout<<"Enter the element you want to search in array "<<endl;
-cin>>ele;
+cin>>element;
 ub=n-1;
 while(lb<=ub)
 {
     mid=(lb+ub)/2;
-    if(ele==a[mid])
+    if(element==arr[mid])
     {
         cout<<"Term Found"<<endl;
     }
-    else if(ele<a[mid])
+    else if(element<arr[mid])
     {
         ub=mid-1;
     }
@@ -35,5 +35,5 @@ while(lb<=ub)
     }
     
 }
-    return 0;
+   
 }
